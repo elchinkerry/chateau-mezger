@@ -35,7 +35,7 @@ This project captures the essence of "Quiet Luxury" through minimalist design, s
    npm run dev
    ```
 
-3. **Visit**: [http://localhost:3000](http://localhost:3000)
+3. **Visit**: [https://chateau-mezger.vercel.app](https://chateau-mezger.vercel.app)
 
 ---
 
@@ -47,4 +47,4 @@ This project captures the essence of "Quiet Luxury" through minimalist design, s
 
 ---
 Design by **Creoxlab** with ❤️
-Built for [Château Mezger](https://chateaumezger.com)
+Built for [Château Mezger](https://chateau-mezger.vercel.app)
