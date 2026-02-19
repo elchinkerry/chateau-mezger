@@ -11,12 +11,12 @@ export function Hero() {
         <section className="relative h-screen w-full overflow-hidden bg-stone-900">
             {/* Background Image Container */}
             <motion.div
-                initial={{ scale: 1.1, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
+                initial={{ scale: 1.1 }}
+                animate={{ scale: 1 }}
                 transition={{ duration: 1.5 }}
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 hover:scale-105"
                 style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=2000')`,
+                    backgroundImage: `url('https://images.unsplash.com/photo-1649872518937-fcefb7c7f887?q=80&w=3840&auto=format&fit=crop')`,
                 }}
             />
 

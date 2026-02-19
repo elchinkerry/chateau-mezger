@@ -26,8 +26,8 @@ export function Footer() {
                         <div className="flex items-start space-x-3 text-stone-400">
                             <MapPin size={18} className="shrink-0 mt-1" />
                             <p className="font-sans font-light leading-relaxed">
-                                {t('footer', 'location')}<br />
-                                82290 Albefeuille-Lagarde<br />
+                                123 Route du Château<br />
+                                75000 Paris<br />
                                 France
                             </p>
                         </div>
@@ -38,11 +38,15 @@ export function Footer() {
                         <div className="space-y-4 text-stone-400">
                             <div className="flex items-center space-x-3">
                                 <Phone size={18} className="shrink-0" />
-                                <p className="font-sans font-light">+33 (0) 5 63 XX XX XX</p>
+                                <a href="tel:+33123456789" className="font-sans font-light hover:text-amber-400 transition-colors">
+                                    +33 1 23 45 67 89
+                                </a>
                             </div>
                             <div className="flex items-center space-x-3">
                                 <Mail size={18} className="shrink-0" />
-                                <p className="font-sans font-light">hello@chateaumezger.com</p>
+                                <a href="mailto:contact@chateau-mezger.com" className="font-sans font-light hover:text-amber-400 transition-colors">
+                                    contact@chateau-mezger.com
+                                </a>
                             </div>
                         </div>
                     </div>

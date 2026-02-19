@@ -9,6 +9,7 @@ export const translations = {
             title: "The Experience",
             park: "5-Acre Park",
             pool: "Saltwater Pool",
+            dinner: "Table d'hôte",
             hosts: "English Hosts",
         },
         rooms: {
@@ -21,7 +22,7 @@ export const translations = {
             rating: "9.5 Rating on Booking.com",
         },
         footer: {
-            location: "Albefeuille-Lagarde, France",
+            location: "123 Route du Château, 75000 Paris, France",
         },
         nav: {
             rooms: "Rooms",
@@ -39,6 +40,7 @@ export const translations = {
             title: "L'Expérience",
             park: "Parc de 2 Hectares",
             pool: "Piscine au Sel",
+            dinner: "Table d'hôte",
             hosts: "Hôtes Anglais",
         },
         rooms: {
@@ -51,7 +53,7 @@ export const translations = {
             rating: "Note de 9.5 sur Booking.com",
         },
         footer: {
-            location: "Albefeuille-Lagarde, France",
+            location: "123 Route du Château, 75000 Paris, France",
         },
         nav: {
             rooms: "Chambres",

@@ -2,7 +2,7 @@
 
 import { useI18n } from "../../lib/i18n"
 import { motion } from "framer-motion"
-import { Waves, Sun, Coffee } from "lucide-react"
+import { Waves, Sun, UtensilsCrossed, Users } from "lucide-react"
 
 export function Experience() {
     const { t } = useI18n()
@@ -19,7 +19,12 @@ export function Experience() {
             desc: "A heated saltwater retreat, secluded by cypress trees and the gentle sound of nature."
         },
         {
-            icon: <Coffee className="w-8 h-8" />,
+            icon: <UtensilsCrossed className="w-8 h-8" />,
+            title: t('experience', 'dinner'),
+            desc: "Exquisite home-cooked dinners available upon request. Enjoy local flavors in a historic setting."
+        },
+        {
+            icon: <Users className="w-8 h-8" />,
             title: t('experience', 'hosts'),
             desc: "Bespoke hospitality from Benjamin and the team, blending English comfort with French elegance."
         }
@@ -33,21 +38,21 @@ export function Experience() {
                     <div className="w-20 h-1 bg-accent mx-auto" />
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-12">
+                <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
                     {features.map((feature, idx) => (
                         <motion.div
                             key={idx}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: idx * 0.2 }}
-                            className="group flex flex-col items-center text-center space-y-6 p-8 border border-transparent hover:border-border transition-all"
+                            transition={{ delay: idx * 0.15 }}
+                            className="group flex flex-col items-center text-center space-y-5 p-8 border border-transparent hover:border-border transition-all"
                         >
                             <div className="text-accent group-hover:scale-110 transition-transform duration-300">
                                 {feature.icon}
                             </div>
-                            <h3 className="text-xl font-serif text-foreground">{feature.title}</h3>
-                            <p className="font-sans font-light text-muted-foreground leading-relaxed">
+                            <h3 className="text-lg font-serif text-foreground">{feature.title}</h3>
+                            <p className="font-sans font-light text-muted-foreground leading-relaxed text-sm">
                                 {feature.desc}
                             </p>
                         </motion.div>
